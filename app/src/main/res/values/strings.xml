@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">L04Reservation</string>
-    <string name="date">Pick Date</string>
-    <string name="time">Pick Time</string>
+    <string name="date">Reservation Date</string>
+    <string name="time">Reservation Time</string>
     <string name="pax">Reservation Size</string>
     <string name="paxHint">Enter Number of People</string>
     <string name="name">Reservation Name</string>

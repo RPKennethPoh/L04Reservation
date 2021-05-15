@@ -107,7 +107,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editTextPax"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
