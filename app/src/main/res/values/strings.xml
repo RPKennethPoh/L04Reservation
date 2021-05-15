@@ -2,10 +2,13 @@
     <string name="app_name">L04Reservation</string>
     <string name="date">Pick Date</string>
     <string name="time">Pick Time</string>
-    <string name="number">Number of Person</string>
+    <string name="pax">Reservation Size</string>
+    <string name="paxHint">Enter Number of People</string>
     <string name="name">Reservation Name</string>
-    <string name="firstName">First Name</string>
-    <string name="lastName">Last Name or Surname</string>
+    <string name="firstName">Enter First Name</string>
+    <string name="lastName">Enter Last Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="phoneHint">Enter Phone Number</string>
     <string name="table">Table Type</string>
     <string name="smoker">Smoker</string>
     <string name="confirm">Confirm</string>
