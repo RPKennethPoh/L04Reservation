@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
 
     DatePicker dp;
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btnConfirm = findViewById(R.id.buttonConfirm);
         btnReset = findViewById(R.id.buttonReset);
 
-        dp.updateDate(2020, 5, 1);
+        // dp.updateDate(2020, 5, 1);
+        dp.setMinDate(System.currentTimeMillis() - 10000);
         tp.setCurrentHour(19);
         tp.setCurrentMinute(30);
 
@@ -89,6 +92,27 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity.this, "Please fill in the name fields", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dp.updateDate(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH);
+                dp.clearFocus();
+                tp.setCurrentHour(19);
+                tp.setCurrentMinute(30);
+                tp.clearFocus();
+                etFirst.setText("");
+                etFirst.clearFocus();
+                etLast.setText("");
+                etLast.clearFocus();
+                etPhone.setText("");
+                etPhone.clearFocus();
+                etPax.setText("");
+                etPax.clearFocus();
+                cbSmoker.setChecked(false);
+                cbSmoker.clearFocus();
             }
         });
     }
